@@ -13,10 +13,11 @@
 		14BE6A88287054EA008D6A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BE6A86287054EA008D6A3A /* Main.storyboard */; };
 		14BE6A8A287054ED008D6A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14BE6A89287054ED008D6A3A /* Assets.xcassets */; };
 		14BE6A8D287054ED008D6A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BE6A8B287054ED008D6A3A /* LaunchScreen.storyboard */; };
+		14BE6A9528705589008D6A3A /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BE6A9428705588008D6A3A /* APICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		14BE6A7D287054EA008D6A3A /* myCryptoHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myCryptoHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14BE6A7D287054EA008D6A3A /* CryptoHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BE6A80287054EA008D6A3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14BE6A82287054EA008D6A3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		14BE6A84287054EA008D6A3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		14BE6A89287054ED008D6A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14BE6A8C287054ED008D6A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14BE6A8E287054ED008D6A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14BE6A9428705588008D6A3A /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,7 @@
 		14BE6A7E287054EA008D6A3A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14BE6A7D287054EA008D6A3A /* myCryptoHelper.app */,
+				14BE6A7D287054EA008D6A3A /* CryptoHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +65,7 @@
 				14BE6A89287054ED008D6A3A /* Assets.xcassets */,
 				14BE6A8B287054ED008D6A3A /* LaunchScreen.storyboard */,
 				14BE6A8E287054ED008D6A3A /* Info.plist */,
+				14BE6A9428705588008D6A3A /* APICaller.swift */,
 			);
 			path = myCryptoHelper;
 			sourceTree = "<group>";
@@ -70,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		14BE6A7C287054EA008D6A3A /* myCryptoHelper */ = {
+		14BE6A7C287054EA008D6A3A /* CryptoHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14BE6A91287054ED008D6A3A /* Build configuration list for PBXNativeTarget "myCryptoHelper" */;
+			buildConfigurationList = 14BE6A91287054ED008D6A3A /* Build configuration list for PBXNativeTarget "CryptoHelper" */;
 			buildPhases = (
 				14BE6A79287054EA008D6A3A /* Sources */,
 				14BE6A7A287054EA008D6A3A /* Frameworks */,
@@ -82,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = myCryptoHelper;
+			name = CryptoHelper;
 			productName = myCryptoHelper;
-			productReference = 14BE6A7D287054EA008D6A3A /* myCryptoHelper.app */;
+			productReference = 14BE6A7D287054EA008D6A3A /* CryptoHelper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 14BE6A78287054EA008D6A3A /* Build configuration list for PBXProject "myCryptoHelper" */;
+			buildConfigurationList = 14BE6A78287054EA008D6A3A /* Build configuration list for PBXProject "CryptoHelper" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				14BE6A7C287054EA008D6A3A /* myCryptoHelper */,
+				14BE6A7C287054EA008D6A3A /* CryptoHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +144,7 @@
 				14BE6A85287054EA008D6A3A /* ViewController.swift in Sources */,
 				14BE6A81287054EA008D6A3A /* AppDelegate.swift in Sources */,
 				14BE6A83287054EA008D6A3A /* SceneDelegate.swift in Sources */,
+				14BE6A9528705589008D6A3A /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +343,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14BE6A78287054EA008D6A3A /* Build configuration list for PBXProject "myCryptoHelper" */ = {
+		14BE6A78287054EA008D6A3A /* Build configuration list for PBXProject "CryptoHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14BE6A8F287054ED008D6A3A /* Debug */,
@@ -348,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14BE6A91287054ED008D6A3A /* Build configuration list for PBXNativeTarget "myCryptoHelper" */ = {
+		14BE6A91287054ED008D6A3A /* Build configuration list for PBXNativeTarget "CryptoHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14BE6A92287054ED008D6A3A /* Debug */,
