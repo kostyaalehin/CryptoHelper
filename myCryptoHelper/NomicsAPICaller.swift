@@ -20,7 +20,7 @@ final class NomicsAPICaller {
 
     }
 
-    public func getAllCryptoData(complition: @escaping (Result<[String], Error>) -> Void) {
+    public func getAllCryptoData(complition: @escaping (Result<[Crypto], Error>) -> Void) {
         guard let url = URL(string: Constants.assetsEndpoint + "ticker?key=" + Constants.apiKey + "&ranks=1&interval=1d,30d&convert=USD&per-page=10&page=1") else {
             return
         }
@@ -29,6 +29,17 @@ final class NomicsAPICaller {
             guard let data = data, error == nil else {
                 return
             }
+
+            do {
+                // Decode
+                let jsonResult =  try JSONDecoder().decode([Crypto].self, from: data)
+                complition(.success(jsonResult))
+            }
+            catch {
+                complition(.failure(error))
+            }
         }
+
+        task.resume()
     }
 }
