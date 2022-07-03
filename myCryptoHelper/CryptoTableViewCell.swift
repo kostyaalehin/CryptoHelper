@@ -7,17 +7,24 @@
 
 import UIKit
 
+struct CryptoTableViewCellViewModel {
+    let name: String
+    let symbol: String
+    let price: String
+}
+
 class CryptoTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var symbolLabel: UILabel!
+
+    static let identifier = "CryptoTableViewCell"
+
+
+    func configure(with viewModel: CryptoTableViewCellViewModel) {
+        nameLabel.text = viewModel.name
+        symbolLabel.text = viewModel.symbol
+        priceLabel.text = viewModel.price
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
