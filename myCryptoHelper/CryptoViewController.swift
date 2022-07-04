@@ -27,7 +27,11 @@ class CryptoViewController: UIViewController {
                 print(models[0].name! + " " + models[0].price!)
                 self?.viewModels = models.compactMap({
                     CryptoTableViewCellViewModel(
-                        name: $0.name ?? "", symbol: $0.symbol ?? "", price: $0.price ?? "")
+                        name: $0.name ?? "",
+                        symbol: $0.symbol ?? "",
+                        price: $0.price ?? "",
+                        logo_url: ($0.logo_url ?? "")
+                    )
                 })
 
                 DispatchQueue.main.async {
